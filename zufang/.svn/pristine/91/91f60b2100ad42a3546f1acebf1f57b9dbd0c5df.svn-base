@@ -1,0 +1,2190 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Relax Home Html Template
+    Template URI: http://devitems.com
+    Description: This is html5 template
+    Author: devitems
+    Author URI: http://devitems.com
+    Version: 1.0
+
+-------------------------------------------------------------------------------------- */
+
+/*------------------------------------------------------------------------------------
+CSS Index
+=============
+1. Theme Default CSS (body, link color, section etc)
+2. Header Top area Style
+3. Header area Style
+4. Slider area Style
+5. Query Form area Style
+6. Welcome area Style
+   6.1 Area Heading Style One CSS
+   6.2 single Promotion Styles
+7. Home Properties Area Style
+   7.1 Single Properties Area Style
+8. Dream Area Style
+9. Single Agent Style
+10. Testimonial Area Style
+11. Partners Brand Logo Area Styles
+12. Footer Top Area style
+13. Footer Area style
+14. Property Page Style
+   14.1 Property Page Query Property Area style
+   14.2 Property Page Single Property style
+   14.3 Property Page Right Sidebar Style
+15.  Property Page Two Column Style
+   15.1 Property Page Two Column Single Property Style
+16. Single Property page Style
+  16.1 Single Property Slider
+  16.2 Single Property Page tab
+  16.3 Single Property Page Similar Property
+17. Agent Page Style
+18. Single Agent Page Style
+18. Blog Left Page Style
+19. Single Blog Post Style
+20. 404 page style
+21. Faq Page style
+22. Home two mape css
+--------------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1. Theme Default CSS (body, link color, section etc)
+/*----------------------------------------*/
+html, 
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+a:focus {
+	outline:0px solid;
+  text-decoration: none;
+}
+img {
+	max-width: 100%;
+  height: auto;
+}
+.fix {
+	overflow: hidden
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0 0 20px;
+  text-transform: none;
+}
+a {
+	transition: all 0.3s ease 0s;
+	text-decoration:none
+}
+a:hover,
+.agent-detail h4:hover a,
+.phone-mail-area a:hover,
+.register-login > a:hover{
+  text-decoration:none;
+  color: #38a377;
+}
+ul{
+	list-style: outside none none;
+	margin: 0;
+	padding: 0
+}
+.floatleft {
+	float:left
+}
+.floatright {
+	float:right
+}
+.margintop100{
+  margin-top: 100px;
+}
+.area-pading{
+  padding: 50px 0;
+}
+.padding-zero{
+  padding: 0;
+}
+.padding-right-zero{
+  padding-right: 0;
+}
+.padding-left-zero{
+  padding-left: 0px;
+}
+.padding-left-65{
+  padding-left: 65px;
+}
+.padding-right-65{
+  padding-right: 65px;
+}
+.promo-content > p,
+.promo-content h3 a:hover,
+.properties-include li,
+.properties-content > p,
+.price-range.pull-left,
+.price-detail.pull-right:hover, 
+.trams-poly.pull-right li:hover a,
+.column-property-content > h3,
+.column-property-content > p, 
+.widget-property-img-wrap > p,
+.tab-content-padding p,
+.download-list li a,
+.agents-details p,
+.post-meta > p,
+.media-body p,
+.four-o-four-content.text-center > p,
+.contact-area-title > p,
+.panel-body > p,
+.area-heading-style-one.text-center > p{
+  color: #666666;
+}
+/*--------------------------------
+Font Weight 500 all element 
+----------------------------------*/
+.phone-mail-area a,
+.register-login > a,
+#nav li a,
+.slide-property-detail li a,
+.single-query label,
+.promo-content h3,
+.promo-content > p,
+.properties-include li,
+.properties-content h3 a,
+.properties-content > p,
+.price-range.pull-left,
+.price-detail.pull-right,
+.widget-title > h3,
+.properties-content-footer h3,
+.properties-content-footer p,
+.properties-img.pull-left > p,
+.trams-poly a,
+.column-property-content > h2,
+.column-property-content > p, 
+.widget-property-img-wrap > p,
+.column-property-more > a,
+.scroll-for-btn > a,
+.properties-content-footer.pull-left > h4,
+.tab-content-padding p,
+.description-tab-content.tab-content-padding > h4,
+.download-list li a,
+.similar-property-tag > p,
+.single-property-similar-cat .owl-theme .owl-controls .owl-buttons div,
+.column-property-content h4 a,
+.agents-details p,
+.agents-contact input,
+textarea#agent-message-box,
+.agents-contact input[type="submit"],
+.blog-style .column-property-tag > p,
+.single-post .column-property-content > h2,
+.media-body > h4,
+.comment-date li a,
+.sent-btn > input[type="submit"],
+.four-o-four h1,
+.four-o-four h2,
+.bac-btn,
+.main-form.text-center input,
+.contact-form-main textarea,
+.panel-title span.q-mark,
+.panel-title > a,
+.panel-body > p,
+.location,
+.single-sp-widget h3{
+  font-weight: 500;
+}
+/*------------------------------------
+Secondary color
+------------------------------------*/
+.properties-content h3 a,
+.column-property-content > h2  a,
+.single-sp-widget h3 a, 
+.properties-content-footer.pull-left a,
+.property-tab li.active a,
+.column-property-content h4 a,
+.single-post .column-property-content > h2,
+.media-body > h4 a,
+.comment-date li a:hover,
+.four-o-four h2,
+.panel-title > a,
+.location {
+  color: #353535;
+}
+/*----------------------------------------------
+2. Header Top area Style
+------------------------------------------------*/
+.header-top {
+    background: #1e1e1e none repeat scroll 0 0;
+    color: #fff;
+    overflow: hidden;
+}
+.phone-mail-area {
+  overflow: hidden;
+  padding: 15px 0;
+}
+.phone-mail-area li {
+    float: left;
+    margin-right: 23px;
+}
+.phone-mail-area a {
+    color: #fff;
+}
+.phone-mail-area a i {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.login-bookmark-area {
+  float: right;
+  overflow: hidden;
+}
+.register-login {
+  float: right;
+  overflow: hidden;
+  padding: 15px 0;
+  position: relative;
+}
+.register-login > a {
+  color: #fff;
+  margin-right: 30px;
+}
+.register-login > a i{
+  margin-right: 7px;
+}
+.register-login > a:first-child::after {
+  left: 37%;
+  position: absolute;
+  top: 15px;
+}
+.top-bookmark {
+    float: left;
+    overflow: hidden;
+}
+.top-bookmark ul {
+    margin-top: 8px;
+}
+.top-bookmark ul li {
+    float: left;
+}
+.top-bookmark ul li a {
+    background: #262626 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    text-align: center;
+    width: 30px;
+    border-radius: 2px
+}
+.top-bookmark ul li a:hover{
+	background-color: #38a377;
+}
+/*----------------------------------------------
+3. Header area Style
+------------------------------------------------*/
+.header-area {
+  background: #262626 none repeat scroll 0 0;
+}
+.logo-wrap {
+  padding: 17px 0;
+}
+.logo-wrap > a {
+  padding-bottom: 10px;
+}
+.main-menu {
+  margin-top: 66px;
+}
+.header-area:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-menu:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-menu ul#nav {
+    float: right;
+}
+#nav > li {
+  float: left;
+  margin-left: 10px;
+  position: relative;
+}
+#nav li a {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+#nav li:hover a, #nav li.active {
+  background: #38a377 none repeat scroll 0 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.sub-menu {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 130%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  z-index: 9999;
+}
+.sub-menu li{
+  width: 200px;
+}
+#nav li:hover .sub-menu {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+  z-index: 9999;
+  transition: all 0.3s ease 0s;
+}
+#nav li .sub-menu li a {
+  border-radius: 0;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+#nav li .sub-menu li:hover a{
+  background-color: #1e1e1e;
+}
+.mega-menu {
+    left: auto;
+    right: 0;
+    transition: all 0.3s ease 0s;
+}
+#nav li:hover .mega-menu{
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+#nav .mega-menu {
+  background: rgba(56, 163, 119, 1) none repeat scroll 0 0;
+  opacity: 0;
+  position: absolute;
+  top: 130%;
+  visibility: hidden;
+  width: 800px;
+  z-index: 999;
+}
+.mega-menu > span {
+  border-right: 1px solid #ddd;
+  float: left;
+  width: 33.3333%;
+}
+.mega-menu > span:last-child{
+  border-right: 0px solid transparent;
+}
+#nav li .mega-menu a {
+  background: transparent none repeat scroll 0 0;
+  font-size: 13px
+}
+#nav li .mega-menu a:hover {
+  background: #1e1e1e none repeat scroll 0 0;
+  border-radius: 0;
+}
+/*----------------------------------------------
+4. Slider area Style
+------------------------------------------------*/
+.slide-content.carousel-caption {
+  left: 0;
+  margin: auto;
+  text-align: left;
+  text-shadow: none;
+  top: 200px;
+  width: 730px;
+}
+.slider-section .owl-prev,.slider-section .owl-next {
+  left: 0;
+  position: absolute;
+  top: 50%;
+}
+.slider-section .owl-next{left: auto;right:0;}
+.slider-section .owl-controls.clickable {
+  margin: 0;
+}
+.slider-section.owl-theme .owl-controls.clickable .owl-buttons div {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -30px;
+  opacity: 1;
+  padding: 0;
+  transition: all 0.3s ease 0s;
+  width: 43px;
+}
+.slider-section.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+  background-color: #40a47a;
+}
+.item > img {
+  width: 100%;
+}
+.slide-content-top {
+  background: rgba(65, 163, 119, 0.8) none repeat scroll 0 0;
+  padding: 40px;
+}
+.slide-content-top h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 55px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.slide-content-top > h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 55px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.slide-property-detail {
+  background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+  overflow: hidden;
+}
+.slide-content-top > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.slide-property-detail li:first-child {
+  border-left: 0 none;
+}
+.slide-property-detail li.slider-btn {
+  line-height: 60px;
+  padding: 0;
+}
+.slide-property-detail li a {
+  background: #38a377 none repeat scroll 0 0;
+  border: 1px solid transparent;
+  color: #fff;
+  display: inline-block;
+  font-size: 17px;
+  margin: 10px 10px 10px;
+  padding: 0 28px;
+  text-transform: uppercase;
+}
+.slide-property-detail li {
+  border-left: 1px solid #ddd;
+  float: left;
+  font-size: 18px;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.slide-property-detail a:hover{
+  background-color: transparent;
+  border: 1px solid #38a377;
+}
+/*----------------------------------------------
+5. Query Form area Style
+------------------------------------------------*/
+.property-query-area {
+  background: #f5f5f5 none repeat scroll 0 0;
+  padding: 50px 0;
+}
+.query-title {
+  background: #262626 none repeat scroll 0 0;
+  text-align: center;
+}
+.query-title > h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 25px 0;
+  text-transform: uppercase;
+}
+.single-query label {
+  color: #262626;
+  font-size: 15px;
+  margin-bottom: 12px;
+  margin-top: 25px;
+}
+.single-query {
+  min-height: 100px;
+}
+.single-query > input[type="text"] {
+  border: 1px solid #e1e1e1;
+  height: 40px;
+  padding-left: 10px;
+  transition: all 0.3s ease 0s;
+}
+.single-query select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../img/select-icon.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  color: #9f9e9e;
+  height: 40px;
+  padding: 10px
+}
+.single-query select:focus {
+  outline: none;
+}
+.single-query select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+.single-query option {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+.query-submit-button.pull-right > input[type="submit"] {
+  background: #40a47a none repeat scroll 0 0;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 30px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.query-submit-button.pull-right > input[type="submit"]:hover{
+  border: 1px solid #40A47A;
+  color: #40A47A;
+  background: #F5F5F5;
+}
+.single-query input, .single-query select {
+  text-transform: capitalize;
+  width: 100%;
+}
+.single-query > input[type="text"]:focus {
+  border: 1px solid #38a377;
+}
+/*
+--------------------------------------------------
+6. Welcome area Style
+--------------------------------------------------*/
+/*
+-----------------------------------------------
+6.1 Area Heading Style One CSS
+-----------------------------------------------*/
+.area-heading-style-one.text-center {
+  margin: auto;
+  width: 70%;
+}
+.area-heading-style-one.text-center > h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.area-heading-style-one.text-center > p {
+  font-size: 18px;
+  font-weight: 400;
+}
+/*
+-----------------------------------------------
+6.2 single Promotion Styles
+-----------------------------------------------*/
+.single-promotion {
+  margin-top: 85px;
+}
+.promo-icon i {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #38a377;
+  font-size: 120px;
+  height: 157px;
+  line-height: 157px;
+  outline: 1px solid rgba(56, 163, 119, 0.9);
+  outline-offset: 0;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0, 0.99, 1, 1) 0s;
+  width: 157px;
+}
+.single-promotion:hover i {
+  background: #38a377 none repeat scroll 0 0;
+  border: 1px solid #38a377;
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+}
+.promo-content {
+  margin-top: 40px;
+}
+.promo-content h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.promo-content h3 a{
+  color: #38a377;
+}
+/*
+-----------------------------------------------
+7. Home Properties Area Style
+-----------------------------------------------*/
+.properties-area {
+  background: #f5f5f5 none repeat scroll 0 0;
+  padding: 100px 0;
+}
+
+.properties-title {
+    background: #262626 none repeat scroll 0 0;
+    color: #fff;
+    overflow: hidden;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+.properties-title > h2 {
+    float: left;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+.view-more {
+  background: #38a377 none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  float: right;
+  font-weight: 700;
+  overflow: hidden;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+.view-more:hover{
+  border: 1px solid #38a377;
+  background-color: transparent;
+  color: #fff;
+}
+/*-----------------------------------------------
+7.1 Single Properties Area Style
+-----------------------------------------------*/
+.single-featured-properties, 
+.column-property-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.properties-image a::before, 
+.column-property-img a::before {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.single-featured-properties:hover .properties-image a::before, 
+.column-single-property:hover .column-property-img a:before,
+.column-property-img:hover {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.properties-image {
+  overflow: hidden;
+  position: relative;
+}
+.properties-image img {
+  width: 100%;
+}
+.sale-tag > p {
+  background: #38a377 none repeat scroll 0 0;
+  color: #fff;
+  font-weight: 700;
+  left: -4px;
+  padding: 10px 15px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 6px;
+}
+.properties-include {
+    background: #ebebeb none repeat scroll 0 0;
+    overflow: hidden;
+}
+.properties-include ul{
+  text-align: center;
+}
+.properties-include li {
+  display: inline-block;
+  font-size: 12px;
+  padding: 15px;
+}
+.properties-include li i {
+  margin-right: 5px;
+}
+.properties-include.opicity-bg li {
+  color: #fff;
+  width: 20%;
+  padding: 0;
+}
+.agent-page-default .properties-include li a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  height: 47px;
+  line-height: 47px;
+}
+.properties-include.opicity-bg a:hover {
+  background: #38a377 none repeat scroll 0 0;
+}
+.agent-page-default .properties-include li {
+  border-left: 1px solid #999;
+  float: left;
+}
+.properties-content {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 7px solid #38a377;
+  overflow: hidden;
+  padding: 25px 25px 15px;
+}
+.properties-content > h3 {
+  margin-bottom: 10px;
+}
+.properties-content h3 a {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.properties-content h3:hover a{
+  color: #38a377;
+}
+p.detail-text {
+    border-bottom: 1px solid #d7ede4;
+    border-top: 1px solid #d7ede4;
+    padding: 20px 0;
+}
+.price-range.pull-left {
+  margin: 0;
+}
+.price-detail.pull-right {
+  color: #38a377;
+}
+/*-----------------------------------------------
+8. Dream Area Style
+-----------------------------------------------*/
+.dream-area {
+  background-attachment: fixed;
+  background-image: url("../img/bg/1.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+.dream-content.text-center {
+  margin: auto;
+  width: 80%;
+}
+.dream-content.text-center > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.dream-content.text-center > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.join-team {
+  background: #38a377 none repeat scroll 0 0;
+  border: 1px solid transparent;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-top: 60px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+.join-team:hover{
+  border: 1px solid #38a377;
+  background: transparent;
+}
+
+/*-----------------------------------------------
+9. Single Agent Style
+-----------------------------------------------*/
+.agentimg-social {
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+.agentimg-social > img {
+  width: 100%;
+}
+.agent-bookmark {
+  bottom: -40px;
+  margin: auto;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  z-index: 2
+}
+.single-agent:hover .agent-bookmark{
+   bottom: 0px;
+   opacity: 1;
+}
+.single-agent:hover .overlay{
+  opacity: 1;
+}
+.agent-bookmark > li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.agent-bookmark a {
+  background: rgba(65, 163, 119, 0.7) none repeat scroll 0 0;
+  border-radius: 2px 2px 0 0;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+}
+.agent-bookmark a:hover{
+  background: #38a377 none repeat scroll 0 0;
+}
+.agent-detail.text-center {
+  background: #fafafa none repeat scroll 0 0;
+  padding: 15px 0;
+}
+.agent-detail h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.agent-detail h3 a{
+   color: #262626;
+}
+.agent-detail.text-center > p {
+  color: #9e9e9e;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.overlay {
+  background: rgba(56, 163, 119, 0.3) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  z-index: 1;
+}
+/*-----------------------------------------------
+10. Testimonial Area Style
+-----------------------------------------------*/
+.testimonial-area {
+  background-image: url("../img/bg/2.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.testimonial-area.area-pading::before,
+.dream-area.area-pading:before {
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.single-testimonial > img {
+  border-radius: 50%;
+}
+.testimonial-area .owl-buttons {
+  position: relative;
+}
+.testimonial-area .owl-prev {
+  left: 0;
+  position: absolute;
+  top: -60px;
+}
+.testimonial-area .owl-next {
+  right: 0;
+  position: absolute;
+  top: -60px;
+}
+.testimonial-area .owl-controls.clickable {
+  margin: 0;
+}
+.testimonial-area .owl-theme .owl-controls .owl-buttons div {
+  background: #363636 none repeat scroll 0 0;
+  border-radius: 0;
+  height: 50px;
+  line-height: 50px;
+  opacity: 1;
+  width: 50px;
+  transition: all 0.5s ease 0s;
+  border: 1px solid transparent;
+}
+.testimonial-area .owl-theme .owl-controls .owl-buttons div i{
+  font-size: 36px;
+}
+.single-testimonial p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: auto;
+  width: 90%;
+}
+.testimonial-area p.client-name {
+  color: #38a377;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.testimonial-area .owl-theme .owl-controls .owl-buttons div:hover{
+  background: transparent;
+  border: 1px solid #38a377;
+  color: #38a377;
+}
+/*-----------------------------------------------
+11. Partners Brand Logo Area Styles
+-----------------------------------------------*/
+.partners-logo-area {
+  margin-top: 63px;
+}
+.partners-logo-area > ul {
+  text-align: center;
+}
+
+/*-----------------------------------------------
+12. Footer Top Area style
+-----------------------------------------------*/
+.footer-top-area {
+  background: #262626 none repeat scroll 0 0;
+  padding-bottom: 10px;
+}
+
+.widget-title > h3 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.widget-title::after {
+    background: #38a377 none repeat scroll 0 0;
+    bottom: -9px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 35%;
+}
+.widget-title {
+    position: relative;
+}
+.single-property-footer-post {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.properties-content-footer h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.properties-img {
+  margin-right: 15px;
+  position: relative;
+}
+.properties-content-footer p {
+  color: #38a377;
+}
+.properties-img.pull-left > p {
+  background: #16a388 none repeat scroll 0 0;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+p.property-price {
+  margin: 0;
+}
+.link-list li::before {
+  color: #16a388;
+  content: "\f105";
+  font-family: fontawesome;
+  left: 0;
+  position: absolute;
+}
+.link-list li {
+  padding: 15px 0;
+}
+.link-list li a {
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0;
+}
+.link-list li a:hover{
+  color: #38A377;
+}
+.agents-widget .properties-img.pull-left img {
+  border-radius: 50%;
+}
+.agents-widget  .properties-content-footer p {
+  font-size: 12px;
+}
+
+.agents-widget .properties-content-footer p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.address-wrap{
+    overflow: hidden;
+}
+.address-wrap i {
+    color: #38a377;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.address-text {
+    float: left;
+}
+.address-text > h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+}
+p.property-price,
+.address-text > p,
+.agents-widget  .properties-content-footer p.agent-mail,
+.copy-right-text > p {
+  color: #bfbdbd;
+}
+.address-text > p {
+  margin-bottom: 20px;
+}
+.footer-bookmark li {
+  float: left;
+}
+.footer-bookmark a {
+  border: 1px solid #ddd;
+  color: #fff;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  margin-right: 10px;
+  text-align: center;
+  width: 42px;
+}
+.properties-content-footer a:hover h3 {
+  color: #38a377;
+}
+.footer-bookmark a:hover{
+  background-color: #38a377;
+  color: #fff;
+  border: 1px solid transparent;
+}
+/*-----------------------------------------------
+13. Footer Area style
+-----------------------------------------------*/
+footer.footer-area {
+  background: #262626 none repeat scroll 0 0;
+  padding: 25px 0;
+}
+.copy-right-text > p {
+  margin: 0;
+}
+.copy-right-text a{
+  color: #2ba37e;
+  margin: 0 5px;
+}
+.copy-right-text a:hover{
+  text-decoration: underline;
+}
+.trams-poly li {
+    float: left;
+    position: relative;
+}
+.trams-poly a {
+  color: #2ba37e;
+  margin-right: 15px;
+}
+.trams-poly li:first-child::after {
+  background: #ddd none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+}
+.trams-poly li:last-child {
+  margin-left: 15px;
+  margin-right: 0;
+}
+#scrollUp {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #38a377;
+  bottom: 70px;
+  height: 50px;
+  line-height: 61px;
+  right: 20px;
+  text-align: center;
+  width: 50px;
+}
+#scrollUp i {
+  color: #38a377;
+  font-size: 36px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+#scrollUp:hover {
+  background: #38a377 none repeat scroll 0 0;
+}
+#scrollUp:hover i{
+  color: #ffffff;
+}
+/*-------------------------------------------
+14. Property Page Style
+---------------------------------------------*
+/*-------------------------------------------
+14.1 Property Page Query Property Area style
+---------------------------------------------*/
+.property-query-area.property-page-bg {
+  background: rgba(0, 0, 0, 0) url("../img/bg/property-qu-bg.jpg") repeat fixed center center / cover ;
+  position: relative;
+}
+.property-query-area.property-page-bg::before {
+  background: rgba(65, 163, 119, 0.8) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.property-query-area.property-page-bg label {
+  color: #fff;
+}
+.property-page-bg .query-submit-button.pull-right > input[type="submit"] {
+  background: #009355 none repeat scroll 0 0;
+}
+.property-page-bg .query-submit-button.pull-right > input[type="submit"]:hover{
+  background: #fff none repeat scroll 0 0;
+  color: #009355;
+}
+.toggle-button-area .container {
+  height: 0;
+}
+.toggle-btn.text-center {
+    left: 50%;
+    position: absolute;
+    top: -36px;
+    margin-left: -32.5px
+}
+.toggle-btn button {
+  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 2px 2px 0 0;
+  color: #fff;
+  font-size: 24px;
+  height: 36px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  width: 65px;
+}
+.toggle-btn.text-center.btn-clicked {
+    top: 0;
+    z-index: 9
+}
+.btn-clicked .clickable-btn {
+    border-radius: 0;
+}
+.btn-clicked .clickable-btn i {
+    transform: rotate(-180deg);
+}
+
+/*-------------------------------------------
+14.2 Property Page Single Property style
+---------------------------------------------*/
+.property-page-title {
+  position: relative;
+}
+.widget-property-img a::before {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  transform: translateY(100%);
+}
+.widget-property-img a:hover::before{
+  opacity: 1;
+  transform: translateY(0);
+}
+.widget-property-img {
+  position: relative;
+  overflow: hidden;
+}
+.widget-property-img img{
+  width: 100%;
+}
+.property-page-title::before {
+  background: #000 none repeat scroll 0 0;
+  bottom: -5px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 95px;
+}
+.property-page-title > h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.column-property-img-wrap {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.column-single-property {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.column-property-img img {
+  width: 100%;
+}
+.column-property-content-wrap {
+  float: left;
+  width: 50%;
+}
+.column-property-content {
+  background: #fafafa none repeat scroll 0 0;
+  padding: 30px;
+}
+.column-property-tag {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.column-property-tag > p {
+  background: #38a377 none repeat scroll 0 0;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.properties-include.opicity-bg {
+  background: rgba(38, 38, 38, 0.9) none repeat scroll 0 0;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.property-2-column-area .properties-include.opicity-bg li {
+  float: left;
+  height: 47px;
+  line-height: 47px;
+  width: 33%;
+}
+.properties-include.opicity-bg li{
+  color: #fff;
+}
+.column-property-content > h2  a:hover, 
+.single-sp-widget h3:hover a, 
+.properties-content-footer.pull-left a:hover{
+  color: #53AD87;
+}
+.column-property-content > h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.column-property-content > h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 19px;
+  text-transform: uppercase;
+}
+.column-property-content > p, .widget-property-img-wrap > p {
+  line-height: 21px;
+  margin-bottom: 0px;
+}
+.column-property-more {
+  background: #53ad87 none repeat scroll 0 0;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+.column-property-more:hover {
+  background: #262626 none repeat scroll 0 0;
+}
+.column-property-more > a {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.scroll-for-btn {
+  background: #262626 none repeat scroll 0 0;
+  clear: both;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+.scroll-for-btn:hover {
+  background: #53ad87 none repeat scroll 0 0;
+}
+.scroll-for-btn > a {
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+}
+/*-----------------------------------------------
+  14.3 Property Page Right Sidebar Style
+-------------------------------------------------*/
+.single-sp-widget{
+  position: relative;
+  margin-bottom: 60px;
+}
+.single-sp-widget h3 {
+  font-size: 18px;
+  margin: 18px 0;
+}
+
+.properties-content-footer.pull-left > h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.right-sidebar .properties-content-footer.pull-left > p {
+  color: #666;
+  line-height: 19px;
+  margin-bottom: 6px;
+}
+.right-sidebar .property-price > p {
+  background: #53ad87 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 6px;
+}
+.right-sidebar .properties-content-footer.pull-left {
+  margin-top: 15px;
+}
+.agent-widget {
+  margin: 40px 0;
+}
+.recent-property-widget .properties-content-footer.pull-left {
+  margin-top: 0;
+}
+/*------------------------------------------------------------
+15.  Property Page Two Column Style
+-------------------------------------------------------------*
+/*-------------------------------------------------------------
+15.1 Property Page Two Column Single Property Style
+---------------------------------------------------------------*/
+.two-column-style .column-property-img-wrap {
+  overflow: hidden;
+  width: 100%;
+}
+.two-column-style  .column-property-content-wrap {
+  float: left;
+  width: 100%;
+}
+/*-----------------------------------------------------------
+16. Single Property page Style
+-------------------------------------------------------------*/
+.single-property-post {
+  overflow: hidden;
+}
+/*-----------------------------------------------------------
+16.1 Single Property Slider
+-------------------------------------------------------------*/
+.single-property-slider {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.single-property-slider .bx-wrapper{
+  margin: 0;
+  padding: 0;
+}
+.single-property-slider  .bx-wrapper .bx-viewport {
+  background: #fff none repeat scroll 0 0;
+  border: 0;
+  box-shadow: none;
+  left: 0px;
+  transform: translateZ(0px);
+}
+.single-property-slider .bxslider img {
+  width: 100%;
+}
+.single-property-slider #bx-pager img {
+  width: 100%;
+}
+.single-property-slider .owl-theme .owl-controls .owl-buttons div {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  border-radius: 0;
+  color: #fff;
+  font-size: 22px;
+  height: 120px;
+  line-height: 120px;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+  width: 30px;
+  position: absolute;
+}
+.single-property-slider .owl-prev{
+  left: 0;
+  top: 0;
+}
+.single-property-slider .owl-next{
+  right: 0;
+  top: 0;
+}
+.single-property-slider .owl-theme .owl-controls{
+  margin: 0;
+}
+
+.single-property-slider .owl-item a.active {
+    display: block;
+    position: relative;
+}
+.single-property-slider .owl-item a.active::before {
+  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+
+/*-----------------------------------------------
+16.2 Single Property Page tab
+--------------------------------------------------*/
+.single-property-tab-content {
+  border: 1px solid #ddd;
+  margin-bottom: 58px;
+  overflow: hidden;
+}
+.property-tab {
+  border-bottom: 1px solid #ebebeb;
+  border-top: 0 none;
+  overflow: hidden;
+}
+.property-tab > li {
+  border-right: 1px solid #ddd;
+  float: left;
+}
+.property-tab > li:last-child {
+  border-right: 0 none;
+}
+.property-tab a {
+  background: #16a388 none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 17px 26.58px;
+}
+@-moz-document url-prefix() {
+    .property-tab a {
+      -webkit-padding-left: 10px;
+  -webkit-padding-right: 10px;
+  }
+}
+.property-tab li.active a {
+  background: #fff none repeat scroll 0 0;
+}
+.tab-content-padding {
+  padding: 30px;
+}
+.tab-content-padding p {
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+.description-tab-content.tab-content-padding > h4 {
+  font-size: 16px;
+  line-height: 21px;
+}
+.download-list{
+  overflow: hidden;
+}
+.download-list > li {
+    float: left;
+    margin-right: 40px;
+}
+.download-list li a i {
+    margin-right: 10px;
+}
+.download-list li a {
+    display: inline-block;
+}
+.single-pt-list li {
+  border-bottom: 1px solid #ddd;
+  padding: 7px 0;
+}
+.single-pt-list ul li strong {
+  margin-right: 50px;
+}
+.single-amenities-list li i {
+  color: #38a377;
+  margin-right: 15px;
+}
+.single-amenities-list li {
+  padding: 10px;
+  text-transform: uppercase;
+}
+.single-property-video-content {
+  margin-bottom: 55px;
+}
+.single-public-place > img {
+  width: 100%;
+}
+.single-public-place > h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.assress-tab-list {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+/*------------------------------------------------
+16.3 Single Property Page Similar Property
+--------------------------------------------------*/
+.similar-property-img img {
+    width: 100%;
+}
+.similar-cat-wrap {
+}
+.single-similar-cat {
+  position: relative;
+}
+.similar-property-img {
+  position: relative;
+}
+.similar-cat-wrap.owl-theme .owl-controls {
+  margin-top: 0;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: -55px;
+}
+.similar-cat-wrap.owl-theme .owl-controls .owl-buttons div {
+  background: #262626 none repeat scroll 0 0;
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0;
+  opacity: 1;
+  padding: 8px 15px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.similar-cat-wrap .owl-prev {
+  border-right: 1px solid #111111;
+}
+.property-page-title span {
+  color: #16a388;
+  margin-left: 5px;
+}
+.similar-cat-wrap.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  background: #38A377;
+  text-decoration: none;
+}
+
+.similar-cat-wrap .col-md-3{width: 100%}
+.similar-property-img > a::before {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+.similar-property-img:hover a::before {
+  opacity: 1;
+}
+.similar-property-tag {
+  background: #38a377 none repeat scroll 0 0;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+}
+.similar-property-tag > p {
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+}
+/*-------------------------------------------
+17. Agent Page Style
+---------------------------------------------*/
+.column-property-content h4 {
+  margin: 0 0 12px;
+}
+.column-property-content h4 a {
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+}
+p.ag-position {
+  margin-bottom: 30px;
+}
+p.ag-details {
+  margin-bottom: 12px;
+}
+.agent-page-defaulc .properties-include li:first-child{
+  border-left: 0;
+}
+.agent-page-default .properties-include li {
+  float: left;
+}
+.agent-page-default .properties-include li a{
+  color: #fff;
+  font-size: 18px;
+  display: block;
+}
+/*-------------------------------------------
+18. Single Agent Page Style
+---------------------------------------------*/
+
+.agent-img {
+    float: left;
+}
+.agents-profile {
+  background: #fafafa none repeat scroll 0 0;
+  margin-bottom: 60px;
+}
+.single-agent-bookmark {
+  background: #3b3b3b none repeat scroll 0 0;
+  float: left;
+}
+.agent-name-meta {
+  float: left;
+  padding: 20px 65px;
+}
+
+.single-agent-bookmark li {
+  float: none;
+}
+.single-agent-bookmark > ul {
+    text-align: center;
+}
+.single-agent-bookmark a {
+    color: #fff;
+    border-bottom: 1px solid #c6e3d7;
+    display: block;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    width: 48px;
+}
+.single-agent-bookmark a:hover{
+  background-color: #38a377;
+}
+.agent-name-meta > h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.agent-name-meta p {
+  color: #626262;
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+.agent-name-meta ul li{
+  padding: 7px 0;
+}
+.agent-name-meta ul li i {
+  margin-right: 12px;
+  
+}
+.agents-details {
+  margin-bottom: 50px;
+}
+.agents-details p {
+  line-height: 21px;
+}
+blockquote.single-agent-quote {
+  border: medium none;
+  margin-bottom: 70px;
+  margin-left: 65px;
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.single-agent-quote > p {
+  background: #ebebeb none repeat scroll 0 0;
+  float: right;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px;
+  overflow: hidden;
+  padding: 30px 60px;
+}
+.single-agent-quote > p::before, .single-agent-quote > p::after{
+  font-family: fontawesome;
+  font-size: 24px;
+  line-height: 22px;
+  position: absolute;
+}
+.single-agent-quote > p::before {
+  content: "\f10d ";
+  left: 28px;
+  top: 27px;
+}
+.single-agent-quote > p::after {
+  content: "\f10e ";
+  right: auto;
+  bottom: 27px;
+  margin-left: 10px;
+}
+.agents-contact {
+  margin-bottom: 90px;
+}
+.agents-contact input {
+  border: 1px solid #eeeeee;
+  color: #000000;
+  margin-right: 15px;
+  padding: 15px;
+  width: 31.7%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.agents-contact input:nth-child(3) {
+  margin-right: 0;
+}
+textarea#agent-message-box {
+    border: 1px solid #eeeeee;
+    color: #000;
+    margin: 15px 0;
+    padding: 15px;
+    width: 100%;
+      -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.agents-contact input:focus, 
+textarea#agent-message-box:focus,
+.input-left > input:focus,
+.input-right textarea:focus {
+  border: 1px solid #16a388;
+  outline: none;
+}
+.agents-contact input[type="submit"] {
+  background: #16a388 none repeat scroll 0 0;
+  border: 1px solid transparent;
+  color: #fff;
+  text-transform: uppercase;
+  width: 160px;
+}
+.agents-contact input[type="submit"]:hover{
+  background-color: #fff;
+  border: 1px solid #16a388;
+  color: #16a388;
+}
+/*--------------------------------------------------
+18. Blog Left Page Style
+----------------------------------------------------*/
+.section-color-blog {
+  background: #f8f7f7 none repeat scroll 0 0;
+}
+.blog-style .column-property-tag {
+  background: #38a377 none repeat scroll 0 0;
+  border: 1px solid #fff;
+  display: block;
+  height: 53px;
+  left: 5px;
+  top: 5px;
+  width: 53px;
+}
+.blog-style .column-property-tag > p {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  line-height: 18px;
+  padding: 6px 0 0;
+}
+.blog-style .column-property-tag p span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.blog-style .column-property-content {
+  background: #fff none repeat scroll 0 0;
+}
+.post-meta > p {
+  text-transform: uppercase;
+}
+.post-meta > p i {
+  color: #40a47a;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.blog-style .column-property-more > a {
+  font-size: 14px;
+}
+.post-meta a {
+  color: #666;
+}
+.post-meta a:hover{
+  color: #40a47a
+}
+.blog-widget .single-sp-widget > p {
+  color: #666;
+  line-height: 19px;
+}
+/*------------------------------------------
+19. Single Blog Post Style
+--------------------------------------------*/
+.single-post .column-property-img-wrap {
+  float: none;
+  width: 100%;
+}
+.single-post .column-property-content-wrap {
+  float: none;
+  margin-top: 55px;
+  width: 100%;
+}
+.single-post .column-property-content {
+  padding: 0;
+}
+.single-post .column-property-img {
+  position: relative;
+  overflow: hidden;
+}
+.single-post .column-property-content > h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.single-post .post-meta {
+  margin-bottom: 55px;
+}
+.column-single-property.blog-style.single-post {
+  margin-bottom: 60px;
+}
+.media-body > h4 {
+  font-size: 14px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+.media-body p {
+  margin: 0;
+}
+.comment-date {
+  overflow: hidden;
+}
+.comment-date > li {
+  float: left;
+  margin-right: 10px;
+}
+.comment-date li a {
+    color: #38a377;
+    display: block;
+}
+.comment-date a i {
+    margin-right: 5px;
+}
+.media {
+  margin-top: 30px;
+}
+.sub-level-media {
+  margin-top: 30px;
+}
+.post-comments .property-page-title > h2 {
+  font-size: 18px;
+}
+.input-left {
+  float: left;
+  width: 50%;
+}
+.post-comments-form {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.input-left > input {
+  border: 1px solid #ebebeb;
+  margin-bottom: 13px;
+  padding: 10px;
+  width: 96%;
+        -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.input-right {
+    float: left;
+    width: 50%;
+}
+.input-right textarea {
+    border: 1px solid #ebebeb;
+    padding: 10px 10px 23px;
+    width: 100%;
+          -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.sent-btn {
+  float: left;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+.sent-btn > input[type="submit"] {
+  background: #262626 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  width: 100%;
+        -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.sent-btn > input[type="submit"]:hover{
+  background-color: #38a377;
+}
+/*-------------------------------------------
+20. 404 page style
+---------------------------------------------*/
+.four-o-four-content.text-center {
+  padding: 150px 0;
+}
+.four-o-four h1 {
+  color: #e5e5e5;
+  font-size: 300px;
+  font-style: italic;
+}
+.four-o-four h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+.four-o-four-content.text-center > p {
+  font-size: 18px;
+  line-height: 21px;
+}
+.bac-btn {
+  background: #262626 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px 25px;
+  border: 1px solid transparent;
+}
+.bac-btn:hover{
+  background: transparent;
+  border: 1px solid #38a377;
+  color: #38a377;
+}
+
+/*--------------------------------------------------------
+21. Contact page style
+----------------------------------------------------------*/
+.contact-area-title > h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+.contact-area-title > p {
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+#contactMap{
+  width: 100%;
+  height: 500px;
+}
+#single-property-map{
+  width: 100%;
+  height: 265px;
+}
+.main-form.text-center input{
+  padding: 10px 10px 10px 0;
+}
+.main-form.text-center input,
+.contact-form-main textarea {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color #ddd #ddd -moz-use-text-color;
+  border-image: none;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.submit-button {
+  margin-top: 40px;
+}
+.main-form .submit-button > input[type="submit"]:hover{
+  background-color: transparent;
+  color: #38a377;
+  border: 1px solid #38a377;
+}
+.main-form .submit-button > input[type="submit"] {
+  background: #38a377 none repeat scroll 0 0;
+  border: 1px solid transparent;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 27px;
+  margin: auto;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 30%;
+  transition: .3s;
+}
+.main-form.text-center input:focus,
+.contact-form-main textarea:focus {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color #38a377 #38a377 -moz-use-text-color;
+  border-image: none;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+}
+/*------------------------------------------------------
+21. Faq Page style
+--------------------------------------------------------*/
+.panel-area {
+    overflow: hidden;
+}
+.question-mark {
+    float: left;
+    text-align: center;
+}
+.panel.panel-relux{
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+.panel-title span.q-mark {
+  background: #38a377 none repeat scroll 0 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 15px;
+  text-align: center;
+  width: 40px;
+}
+span.q-text {
+  position: relative;
+  top: -4px;
+}
+.panel-title > a {
+  display: block;
+  font-size: 17px;
+  line-height: 22px;
+}
+.panel-heading{
+  border-radius: 0;
+  padding: 0;
+}
+.panel-relux .panel-body {
+  padding: 15px 15px;
+}
+.panel-body > p {
+  line-height: 21px;
+}
+
+.mobile-menu-area {
+  display: none;
+}
+/*------------------------------
+22. Home two mape css
+---------------------------------*/
+#homeMap{
+  width: 100%;
+  height: 650px
+}
+.info_content {
+  text-align: center;
+  width: 255px;
+}
+.imageRow {
+  margin-top: 5px;
+  position: relative;
+}
+.saleTag {
+  background: #38a377 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+}
+.location {
+  font-size: 18px;
+  margin: 10px;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.location:hover{
+  color: #38a377;
+}

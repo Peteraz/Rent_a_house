@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.entity.IDao.IOrdersDao" >
+  <resultMap id="BaseResultMap" type="com.entity.domain.Orders" >
+    <id column="OrderId" property="orderid" jdbcType="INTEGER" />
+    <result column="OrderStatus" property="orderstatus" jdbcType="VARCHAR" />
+    <result column="OrderTime" property="ordertime" jdbcType="TIMESTAMP" />
+    <result column="OpId" property="opid" jdbcType="INTEGER" />
+    <result column="HouseId" property="houseid" jdbcType="INTEGER" />
+    <result column="CPersonName" property="cpersonname" jdbcType="VARCHAR" />
+    <result column="CNumber" property="cnumber" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="OrdersResultMap" type="com.entity.domain.dto.OrdersDto" >
+    <id column="OrderId" property="orderId" jdbcType="INTEGER" />
+    <result column="OrderStatus" property="orderStatus" jdbcType="VARCHAR" />
+    <result column="OrderTime" property="orderTime" jdbcType="VARCHAR" />
+    <result column="CPersonName" property="cpersonName" jdbcType="VARCHAR" />
+    <result column="CNumber" property="cNumber" jdbcType="VARCHAR" />
+    <result column="HouseAddress" property="address" jdbcType="VARCHAR" />
+    <result column="HouseArea" property="hPrice" jdbcType="INTEGER" />
+    <result column="Price" property="hArea" jdbcType="INTEGER" /> 
+    <result column="Name" property="hName" jdbcType="VARCHAR" />
+    <result column="PhoneNumber" property="hPhonenumber" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <sql id="Order_Column_List" >
+    OrderId, OrderStatus, OrderTime, HouseAddress, HouseArea, CPersonName, CNumber,Price,Name,PhoneNumber,HoId
+  </sql>
+  <sql id="Base_Column_List" >
+    OrderId, OrderStatus, OrderTime, OpId, HouseId, CPersonName, CNumber,HoId
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from orders
+    where OrderId = #{orderid,jdbcType=INTEGER}
+  </select>
+  <select id="getOrdersByUId" resultMap="OrdersResultMap" parameterType="java.lang.Long" >
+	SELECT 
+		<include refid="Order_Column_List" />
+	FROM 
+		house,orders,USER
+	WHERE
+		userid = house.`HownerId`
+	AND 
+		house.houseId = orders.`HouseId`
+	AND 
+		OpId = #{UId}
+  </select>
+  <select id="getOrdersByHoId" resultMap="OrdersResultMap" parameterType="java.lang.Long" >
+	SELECT 
+		<include refid="Order_Column_List" />
+	FROM 
+		house,orders,USER
+	WHERE
+		userid = house.`HownerId`
+	AND 
+		house.houseId = orders.`HouseId`
+	AND 
+		HoId = #{id}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from orders
+    where OrderId = #{orderid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.entity.domain.Orders" >
+    insert into orders (OrderId, OrderStatus, OrderTime, 
+      OpId, HouseId, CPersonName, 
+      CNumber,HoId)
+    values (#{orderid,jdbcType=INTEGER}, #{orderstatus,jdbcType=VARCHAR}, #{ordertime,jdbcType=TIMESTAMP}, 
+      #{opid,jdbcType=INTEGER}, #{houseid,jdbcType=INTEGER}, #{cpersonname,jdbcType=VARCHAR}, 
+      #{cnumber,jdbcType=VARCHAR},#{hoid})
+  </insert>
+  <insert id="insertSelective" parameterType="com.entity.domain.Orders" >
+    insert into orders
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="orderid != null" >
+        OrderId,
+      </if>
+      <if test="orderstatus != null" >
+        OrderStatus,
+      </if>
+      <if test="ordertime != null" >
+        OrderTime,
+      </if>
+      <if test="opid != null" >
+        OpId,
+      </if>
+      <if test="houseid != null" >
+        HouseId,
+      </if>
+      <if test="cpersonname != null" >
+        CPersonName,
+      </if>
+      <if test="cnumber != null" >
+        CNumber,
+      </if>
+      <if test="hoid != null" >
+        HoId,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="orderid != null" >
+        #{orderid,jdbcType=INTEGER},
+      </if>
+      <if test="orderstatus != null" >
+        #{orderstatus,jdbcType=VARCHAR},
+      </if>
+      <if test="ordertime != null" >
+        #{ordertime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="opid != null" >
+        #{opid,jdbcType=INTEGER},
+      </if>
+      <if test="houseid != null" >
+        #{houseid,jdbcType=INTEGER},
+      </if>
+      <if test="cpersonname != null" >
+        #{cpersonname,jdbcType=VARCHAR},
+      </if>
+      <if test="cnumber != null" >
+        #{cnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="hoid != null" >
+        #{hoid},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.entity.domain.Orders" >
+    update orders
+    <set >
+      <if test="orderstatus != null" >
+        OrderStatus = #{orderstatus,jdbcType=VARCHAR},
+      </if>
+      <if test="ordertime != null" >
+        OrderTime = #{ordertime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="opid != null" >
+        OpId = #{opid,jdbcType=INTEGER},
+      </if>
+      <if test="houseid != null" >
+        HouseId = #{houseid,jdbcType=INTEGER},
+      </if>
+      <if test="cpersonname != null" >
+        CPersonName = #{cpersonname,jdbcType=VARCHAR},
+      </if>
+      <if test="cnumber != null" >
+        CNumber = #{cnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="hoid != null" >
+        #{hoid},
+      </if>
+    </set>
+    where OrderId = #{orderid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.entity.domain.Orders" >
+    update orders
+    set OrderStatus = #{orderstatus,jdbcType=VARCHAR},
+      OrderTime = #{ordertime,jdbcType=TIMESTAMP},
+      OpId = #{opid,jdbcType=INTEGER},
+      HouseId = #{houseid,jdbcType=INTEGER},
+      CPersonName = #{cpersonname,jdbcType=VARCHAR},
+      CNumber = #{cnumber,jdbcType=VARCHAR},
+      Hoid = #{hoid}
+    where OrderId = #{orderid,jdbcType=INTEGER}
+  </update>
+</mapper>

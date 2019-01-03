@@ -1,0 +1,59 @@
+﻿<%@ page language="java" pageEncoding="UTF-8"%>
+ <%@page import="com.entity.domain.User"%>   
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<% 
+String path = request.getContextPath(); 
+//变量 
+String basePath = request.getScheme()+"://"+request.getServerName()
++":"+request.getServerPort()+path+"/"; 
+// 将 "项目路径basePath" 放入pageContext中，待以后用EL表达式读出。 
+pageContext.setAttribute("basePath",basePath); 
+%>  
+<html lang="en">
+<body>
+	<section class="footer-top-area  area-pading">
+		<div class="container">
+			<!-- Single Footer Widget-->
+			<div class="col-md-4 col-sm-4">
+				<div class="address-wrap">
+					<i class="fa fa-map-marker"></i>
+					<div class="address-text">
+						<h4>地址:</h4>
+						<p>中國暨南大學計算機科學系</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-md-4 col-sm-4">
+				<div class="address-wrap">
+					<i class="fa fa-phone"></i>
+					<div class="address-text">
+						<h4>聯絡</h4>
+						<p>+86 15521380445</p>
+					</div>
+				</div>
+							</div>
+						<div class="col-md-4 col-sm-4">
+				<div class="address-wrap">
+					<i class="fa fa-envelope"></i>
+					<div class="address-text">
+						<h4>E-mail</h4>
+						<p>yukking@qq.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="copy-right-text" style="text-align: center;">
+						<p>Copyright &copy;找房么</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</section>
+</body>
+</html>
+

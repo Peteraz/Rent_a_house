@@ -1,0 +1,48 @@
+package com.controller;  
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.entity.domain.House;
+import com.entity.domain.dto.HouseDto;
+import com.entity.service.IHouseService;
+import com.entity.service.IUserService;
+@Controller  
+@RequestMapping("/")  
+public class indexController {  
+    @Resource  
+    private IUserService userService; 
+    @Resource  
+    private IHouseService houseService; 
+  
+    @RequestMapping("/")
+    public String index(HttpServletRequest request,ModelMap model,Long id,HouseDto houseDto){  
+    	List<House> houseList = houseService.findByHouseDto(houseDto);
+    	model.put("houseList", houseList);
+    	return "index";
+    } 
+    @RequestMapping("/index")  
+    public String toIndex(HttpServletRequest request,ModelMap model,Long id,HouseDto houseDto){  
+    	List<House> houseList = houseService.findByHouseDto(houseDto);
+    	model.put("houseList", houseList);
+    	return "index";
+    }
+    
+    @RequestMapping("/Test")  
+    public String Test(HttpServletRequest request,ModelMap model,Long id,HouseDto houseDto){     	
+    	return "Test";
+    } 
+    @RequestMapping("/nav")  
+    public String nav(HttpServletRequest request,ModelMap model,Long id,HouseDto houseDto){
+    	HttpSession session = request.getSession(true);
+    	if(session.getAttribute("user")!=null)
+    		model.put("user", session.getAttribute("user"));
+    	return "/static/nav";
+    }   
+}  

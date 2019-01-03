@@ -1,0 +1,133 @@
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<% 
+String path = request.getContextPath(); 
+//变量 
+String basePath = request.getScheme()+"://"+request.getServerName()
++":"+request.getServerPort()+path+"/"; 
+// 将 "项目路径basePath" 放入pageContext中，待以后用EL表达式读出。 
+pageContext.setAttribute("basePath",basePath); 
+%> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>登录</title>
+    <!-- stylesheets css -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <style>
+    body{font-family:微软雅黑!important;background-color: #F1F1F1;} h2{color:black;} .text-center{text-align:center}
+    body,html {
+	width: 100%;
+	overflow: hidden
+}
+    </style></head>
+  <!-- 导航栏 -->
+  
+  <body >
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h2>用户登录</h2>
+        <section>
+          <form class="bs-example bs-example-form" role="form" onsubmit="return false;" id="login_form">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon">
+                <img src="${basePath}/img/user/username_icon.png" /></span>
+              <input type="text" class="form-control" name="username" id="user_name" value="" placeholder="用户名/邮箱"></div>
+            <br>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon">
+                <img src="${basePath}/img/user/pw_icon.png" /></span>
+              <input type="password" class="form-control" name="password" id="user_pw" vale="" placeholder="密码"></div>
+            <lable id="prompt" style="color:red;font-szie:1.5em"></lable>
+            <br>
+            <div class="input-group input-group-lg">
+  				<span class="input-group-addon">
+              		<img src="${basePath}/img/user/yanzhengma_icon.png" />
+              	</span>
+              	<input type="text" class="form-control" name="checkCode" id="checkCode" vale="" placeholder="验证码" size="8" maxlength="4" title="不区分大小写" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" onblur="">
+              	<span class="input-group-addon" style="padding: 0px 0px;">
+              		<img style="height:43px" src="${basePath}/PictureCheckCode.Servlet" id="CreateCheckCode" onclick="ReloadVcode();" title="看不清？换一个">  
+              	</span>
+            </div>
+            <br>
+            <span>
+              <input type="checkbox" onclick="$('#remember_me').val(this.checked)" checked/>记住登录状态
+			  <input type="hidden" id="remember_me" name="remember_me" value="true"/>
+              <a href="resetPw" target="_blank" style="float:right">找回密码</a></span>
+             <br>
+             <br>
+            <div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" style="width:100%">登 录</button></div>
+            <div>
+            <br>
+              <a href="javaScript:;" onclick="window.parent.topToRegister()" style="float:right">注册</a></div>
+          </form>
+        </section>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/layer/2.4/layer.min.js"></script>
+    <script src="${basePath}/js/common.js"></script>
+    <script>$("#submit").on("click",
+      function() {
+        $("#submit").text("登录中..");
+        $.ajax({
+          type: 'POST',
+          dataType: 'json',
+          contentType:'application/x-www-form-urlencoded;charset=UTF-8',
+          url: '${basePath}/user/login',
+          data: $('#login_form').serialize(),
+          success: function(response, status, xhr) {
+          response = eval("("+response+")");
+          if (response.status == 1) {
+          	showMsg(response.msg, 1000); 
+          	window.parent.location.reload(); 
+          }
+          else if(response.status==0)
+          {
+              showMsg(response.msg, 1000);
+              ReloadVcode();
+              $("#submit").text("登录");
+          }
+          else {
+              showMsg(response.msg, 1000);
+			  ReloadVcode();
+              $("#submit").text("登录");
+          }
+        },
+        error:function(){
+        	showMsg("登录异常，请重试！");
+        }
+        });
+      })
+      
+    function setCookie(name,value,hours,path,domain,secure){
+		var cdata = name + "=" + value;
+    	if(hours){
+    	var d = new Date();
+    	d.setHours(d.getHours() + hours);
+    	cdata += "; expires=" + d.toGMTString();
+    	
+	}
+    cdata +=path ? ("; path=" + path) : "" ;
+    cdata +=domain ? ("; domain=" + domain) : "" ;
+    cdata +=secure ? ("; secure=" + secure) : "" ;
+    document.cookie = cdata;
+	}
+	function getCookie(name){
+	var reg = eval("/(?:^|;\\s*)" + name + "=([^=]+)(?:;|$)/"); 
+    return reg.test(document.cookie) ? RegExp.$1 : "";
+	}
+
+   function ReloadVcode() {  
+     document.getElementById("CreateCheckCode").src = document  
+             .getElementById("CreateCheckCode").src  
+            + "?nocache=" + new Date().getTime(); 
+   }
+      </script>
+  </body>
+</html>

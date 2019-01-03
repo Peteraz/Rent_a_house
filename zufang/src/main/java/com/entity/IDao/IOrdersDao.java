@@ -1,0 +1,25 @@
+package com.entity.IDao;
+
+import java.util.List;
+
+import com.entity.domain.Orders;
+
+public interface IOrdersDao {
+    int deleteByPrimaryKey(Integer orderid);
+
+    int insert(Orders record);
+
+    int insertSelective(Orders record);
+
+    Orders selectByPrimaryKey(Integer orderid);
+
+    int updateByPrimaryKeySelective(Orders record);
+
+    int updateByPrimaryKey(Orders record);
+    
+    public List<Orders> getOrdersByUId(Long UId);
+    
+    public List<Orders> getOrdersByHoId(Long id);
+    
+    public List<Orders> getOrderList();
+}

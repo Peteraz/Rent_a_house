@@ -1,0 +1,669 @@
+/*--------------------------------------
+Relux Home Responsive style
+----------------------------------------*/
+
+/* --------------------------------------
+Large desktop :1200px. 
+-----------------------------------------*/
+@media (min-width: 1170px) and (max-width: 1366px){
+  .slide-content.carousel-caption {
+    top: 25px;
+  }
+}
+@media (min-width: 1200px) {
+.column-property-content > h2 {
+  font-size: 17px;
+  margin-bottom: 11.5px;
+}
+.property-tab a {
+  padding: 17px 26.21px;
+}
+.slide-property-detail li {
+  padding: 0 17px;
+}
+
+}
+/* --------------------------------------
+Normal desktop :992px.
+-----------------------------------------*/
+@media (min-width: 992px) and (max-width: 1200px) {
+.container {width:970px}
+#nav .mega-menu {
+  width: 700px;
+}
+.area-heading-style-one.text-center {
+  width: 80%;
+}
+.promo-content h3 {
+  font-size: 15px;
+}
+.promo-content > p {
+  font-weight: 400;
+}
+.properties-include li {
+  padding: 15px 3px;
+}
+.properties-title > h2 {
+  font-size: 30px;
+}
+.dream-content.text-center {
+  width: 90%;
+}
+.dream-content.text-center > h2 {
+  font-size: 40px;
+}
+.join-team {
+  margin-top: 40px;
+}
+.agent-bookmark > li {
+  margin-left: 0;
+}
+.partners-logo-area li {
+  margin-left: 40px;
+}
+.footer-bookmark a {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 2px;
+  width: 40px;
+}
+.properties-img {
+  margin-right: 10px;
+}
+.link-list a {
+  padding: 13px 0;
+}
+.trams-poly.pull-right {
+  margin-right: 65px;
+}
+.slide-content-top > h2 {
+  font-size: 20px;
+  line-height: 35px;
+}
+.slide-content-top h1 {
+  font-size: 37px;
+  line-height: 30px;
+}
+.slide-content-top > p {
+  font-size: 15px;
+}
+.slide-property-detail a {
+  font-size: 15px;
+  margin-left: 7px;
+  margin-top: 4px;
+  padding: 14px;
+}
+.slide-property-detail li {
+  font-size: 14px;
+  line-height: 60px;
+  height: 60px;
+}
+.slide-content.carousel-caption {
+  left: 32px;
+}
+
+.property-tab a {
+  padding: 17px 15.2px;
+}
+.padding-left-65 {
+  padding-left: 35px;
+}
+.padding-right-65 {
+  padding-right: 35px;
+}
+.padding-right-zero {
+  padding-right: 15px;
+}
+.slide-content.carousel-caption {
+  top: 50px;
+  width: 620px;
+}
+.slide-property-detail li a {
+  margin: 10px 6px 6px;
+  padding: 12px 27px;
+}
+.slide-property-detail li.slider-btn {
+  line-height: 16px;
+}
+.column-property-content-wrap,
+.column-property-img-wrap {
+  width: 100%;
+}
+.agent-name-meta {
+  float: left;
+  padding: 10px 13px;
+}
+.slide-property-detail li {
+    padding: 0 17px;
+}
+
+
+}
+ 
+/* --------------------------------------
+Tablet desktop :768px.
+-----------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+.container {width:750px}   
+.mobile-menu-area {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+}
+.header-area {
+  display: none;
+}
+.phone-mail-area li {
+  margin-right: 23px;
+}
+.phone-mail-area li {
+  margin-right: 10px;
+}
+.login-bookmark-area {
+  overflow: hidden;
+  float: none;
+}
+.register-login > a {
+  margin-right: 15px;
+}
+.top-bookmark {
+  overflow: hidden;
+  padding: 10px 0;
+}
+.top-bookmark ul li a {
+  margin-left: 5px;
+}
+.top-bookmark ul {
+  margin-top: 0;
+}
+.slide-content.carousel-caption {
+  left: 70px;
+  top: 15px;
+  width: 638px;
+}
+.slide-content-top h1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+.slide-content-top > h2 {
+  font-size: 15px;
+  line-height: 25px;
+}
+.slide-content-top > p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0;
+}
+.slide-property-detail li {
+  font-size: 14px;
+  line-height: 30px;
+  padding: 12px 18px;
+}
+.slide-property-detail li.slider-btn {
+  line-height: 30px;
+}
+.slide-property-detail li {
+  height: 50px;
+}
+.slide-property-detail li {
+  font-size: 14px;
+  line-height: 28px;
+  padding: 12px 18px;
+}
+.slide-content-top {
+  padding: 30px;
+}
+.slide-content-top h1{
+  margin-bottom: 10px;
+}
+.welcome-area {
+  padding: 60px 0;
+}
+.area-heading-style-one.text-center {
+  width: 95%;
+}
+.promo-icon i {
+  font-size: 50px;
+  height: 80px;
+  line-height: 80px;
+  width: 80px;
+}
+.promo-content h3 {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.single-promotion {
+  margin-top: 40px;
+}
+.promo-content > p {
+  font-weight: 400;
+}
+.properties-area {
+  padding: 50px 0;
+}
+.properties-include li {
+  padding: 10px;
+}
+.properties-title > h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.properties-title {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.single-featured-properties {
+  margin-bottom: 30px;
+}
+.margintop100 {
+  margin-top: 0px;
+}
+.area-pading {
+  padding: 50px 0;
+}
+.dream-content.text-center {
+  width: 100%;
+}
+.dream-content.text-center > h2 {
+  font-size: 30px;
+  line-height: 22px;
+}
+.dream-content.text-center > p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.join-team {
+  font-size: 16px;
+  line-height: 27px;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.single-testimonial p {
+  font-size: 15px;
+  line-height: 22px;
+  width: 94%;
+}
+.testimonial-area p.client-name {
+  margin: 6px auto;
+}
+.footer-bookmark li {
+  margin-bottom: 10px;
+}
+.trams-poly.pull-right {
+  float: none !important;
+}
+.four-o-four h1 {
+  color: #e5e5e5;
+  font-size: 200px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.blog-page-content-area .padding-right-zero,
+.single-post-content-area  .col-md-8.col-sm-8.padding-right-zero,
+.faq-page-content-area .col-md-8.col-sm-12.padding-right-zero,
+.property-page-content-area .col-md-8.padding-right-zero,
+.single-agent-content-area .col-md-8.padding-right-zero,
+.single-post-content-area .col-md-8.col-sm-12.padding-right-zero,
+.agent-page-content-area .col-md-8.col-sm-12.padding-right-zero {
+  padding-right: 15px;
+}
+
+.blog-page-content-area .padding-left-65, 
+.single-post-content-area .col-md-4.col-sm-4.padding-left-65,
+.faq-page-content-area .col-md-4.col-sm-12.padding-left-65,
+.property-page-content-area .col-md-4.padding-left-65, 
+.single-agent-content-area .col-md-4.padding-left-65{
+  padding-left: 15px;
+}
+.single-post-content-area .input-left, 
+.single-post-content-area .input-right, 
+.single-post-content-area .input-left > input {
+  width: 100%;
+}
+.faq-page-content-area .feature-property-widget,
+.property-2-column-area .feature-property-widget,
+.single-agent-content-area .feature-property-widget,
+.blog-page-content-area .feature-property-widget,
+.single-post-content-area .feature-property-widget,
+.agent-page-content-area .feature-property-widget{
+  float: left;
+  margin-right: 30px;
+  width: 50%;
+}
+.faq-area {
+  margin-bottom: 60px;
+}
+.column-property-content {
+  padding: 27.5px 30px;
+}
+.column-property-content > h2 {
+  font-size: 16px;
+}
+.column-property-more > a {
+  font-size: 18px;
+}
+.column-property-more {
+  height: 39px;
+  line-height: 39px;
+}
+
+.recent-property-widget{
+  margin-top: 40px;
+  overflow: hidden;
+}
+.agent-name-meta {
+  padding: 20px 50px;
+}
+.agents-contact input {
+  margin-bottom: 10px;
+  width: 100%;
+  margin-right: 0;
+}
+.property-tab a {
+  padding: 17px 22.78px;
+}
+p.ag-details {
+  margin-bottom: 0;
+}
+.column-property-more {
+  height: 46px;
+  line-height: 45px;
+}
+p.ag-position {
+  margin-bottom: 8px;
+}
+.column-property-content > h3 {
+  margin-bottom: 11px;
+}
+.single-property-slider .owl-theme .owl-controls .owl-buttons div {
+  height: 142px;
+  line-height: 142px;
+}
+.padding-left-zero {
+  padding-left: 15px;
+}
+
+}
+/* --------------------------------------
+small mobile :320px.
+-----------------------------------------*/
+@media (max-width: 767px) {
+.container {width:300px}
+.mobile-menu-area {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+}
+.header-area {
+  display: none;
+}
+.phone-mail-area {
+  display: none;
+}
+.login-bookmark-area {
+  float: none;
+  text-align: center;
+  padding: 10px 0;
+}
+.register-login {
+  float: none;
+}
+.register-login > a {
+  color: #fff;
+  margin: 0 15px;
+}
+.top-bookmark {
+  float: none;
+}
+.top-bookmark ul li {
+  display: inline-block;
+  float: none;
+}
+.top-bookmark ul li a {
+  margin: 0 5px;
+}
+.register-login {
+  padding: 0;
+}
+.register-login > a:first-child::after {
+  left: 123px;
+  top: 0;
+}
+.top-bookmark {
+  margin: 10px 0;
+}
+.single-promotion {
+  margin-top: 30px;
+}
+.promo-content {
+  margin-top: 20px;
+}
+.promo-content h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.area-heading-style-one.text-center {
+  width: 100%;
+}
+.properties-title {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.properties-title > h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+.view-more {
+  font-weight: 500;
+  padding: 8px 5px;
+}
+.properties-include li {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px;
+}
+.area-pading {
+  padding: 50px 0;
+}
+.area-heading-style-one.text-center > h2 {
+  font-size: 30px;
+}
+.area-heading-style-one.text-center > p {
+  font-size: 15px;
+}
+.single-featured-properties {
+  margin-bottom: 30px;
+}
+.margintop100 {
+  margin-top: 0px;
+}
+.dream-content.text-center > h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.dream-content.text-center {
+  width: 100%;
+}
+.dream-content.text-center > p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.join-team {
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.single-testimonial p {
+  font-size: 14px;
+  line-height: 21px;
+  width: 100%;
+}
+.testimonial-area .owl-prev {
+  top: -80px;
+}
+.testimonial-area .owl-next {
+  top: -80px;
+}
+
+.single-footer-widget {
+  margin-bottom: 30px;
+}
+.trams-poly.pull-right {
+  float: none !important;
+}
+.four-o-four-content.text-center {
+  padding: 100px 0;
+}
+.four-o-four h1{
+  font-size: 90px;
+}
+.four-o-four h2 {
+  font-size: 25px;
+}
+.four-o-four-content.text-center > p {
+  font-size: 15px;
+  line-height: 20px;
+}
+.bac-btn {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+.blog-page-content-area .col-md-6.col-sm-12.padding-right-zero, 
+.blog-page-content-area .col-md-4.col-sm-4.padding-left-65.blog-widget,
+.blog-page-content-area .col-md-8.col-sm-8.padding-right-zero,
+.blog-page-content-area .col-md-6.col-sm-12.padding-left-zero,
+.blog-page-content-area .col-md-4.padding-right-65,
+.blog-page-content-area .col-md-8.padding-right-zero,
+.blog-page-content-area .col-md-6.padding-left-zero, 
+.blog-page-content-area .col-md-6.padding-right-zero,
+.single-post-content-area .col-md-8.col-sm-8.padding-right-zero,
+.single-post-content-area .col-md-4.col-sm-4.padding-left-65,
+.faq-page-content-area .col-md-4.col-sm-12.padding-left-65,
+.faq-page-content-area .col-md-8.padding-right-zero, .column-widget,
+.property-page-content-area .col-md-8.col-sm-12.padding-right-zero,
+.property-page-content-area  .col-md-4.col-sm-12.padding-left-65,
+.property-page-content-area .col-md-6.col-sm-6.padding-left-zero,
+.property-page-content-area  .col-md-6.col-sm-6.padding-right-zero,
+.three-column-pro .col-md-4.col-sm-6 ,
+.col-md-12.three-column-pro,
+.single-agent-content-area .col-md-8.padding-right-zero,
+.single-agent-content-area .col-md-4.padding-left-65,
+.blog-page-content-area .col-md-4.col-sm-12.padding-left-65.blog-widget,
+.single-post-content-area .col-md-4.col-sm-12.padding-left-65,
+.single-post-content-area .col-md-8.col-sm-12.padding-right-zero,
+.property-page-content-area .col-md-4.padding-left-65,
+.agent-page-content-area .col-md-4.col-sm-12.padding-left-65,
+.agent-page-content-area  .col-md-8.col-sm-12.padding-right-zero,
+.col-md-8.col-sm-12.padding-right-zero,
+.col-md-6.col-sm-6.padding-right-zero,
+.col-md-4.col-sm-12.padding-left-65 {
+  padding: 0;
+}
+.column-property-content > h2 {
+  font-size: 17px;
+}
+.three-column-pro.property-2-column-area.area-pading .col-md-4.col-sm-6 {
+  padding: 0;
+}
+.col-md-8.padding-right-zero ,
+.column-widget {
+  margin-top: 30px;
+}
+.blog-page-content-area .padding-left-65 {
+  padding-left: 15px;
+}
+.single-post-content-area .input-left, 
+.single-post-content-area .input-right, 
+.single-post-content-area .input-left > input {
+  width: 100%;
+}
+.single-post .post-meta {
+  margin-bottom: 30px;
+}
+.main-form .submit-button > input[type="submit"] {
+  width: 70%;
+}
+.contact-area-title > p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.contact-area-title > h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.property-page-content-area .column-property-img-wrap,
+.property-page-content-area .column-property-content-wrap {
+  width: 100%;
+}
+.agent-img.fix > img {
+  width: 100%;
+}
+.single-agent-content-area  .single-agent-bookmark li {
+  float: left;
+}
+.single-agent-content-area  .single-agent-bookmark a {
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+}
+.single-agent-content-area  .agent-name-meta {
+  padding: 20px;
+  width: 100%;
+}
+.single-agent-content-area blockquote.single-agent-quote {
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.agents-contact input {
+  margin-right: 0px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.property-tab > li {
+  border: none;
+}
+.property-tab a {
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding: 6px 13px;
+  border-right: 1px solid #ddd;
+}
+.column-property-content-wrap,
+.column-property-img-wrap  {
+  width: 100%;
+}
+.copy-right-text {
+  text-align: center;
+}
+.trams-poly.pull-right > ul {
+  text-align: center;
+}
+.trams-poly li {
+  display: inline;
+  float: none;
+}
+.panel-title span.q-mark {
+  display: none;
+}
+.panel-title > a {
+  padding: 10px;
+}
+#scrollUp {
+  bottom: 110px;
+  right: 10px;
+}
+
+
+}
+/* --------------------------------------
+Large Mobile :480px.
+-----------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+
+}

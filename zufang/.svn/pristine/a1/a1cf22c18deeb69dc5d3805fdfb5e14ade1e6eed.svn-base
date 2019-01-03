@@ -1,0 +1,34 @@
+package com.entity.service.impl;
+
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;  
+
+import com.entity.domain.House;
+import com.entity.domain.dto.HouseDto;
+import com.entity.IDao.IHouseDao;
+import com.entity.service.IHouseService;  
+  
+@Service("houseService")  
+public class HouseServiceImpl implements IHouseService {  
+    @Resource  
+    private IHouseDao houseDao;  
+    public House getHouseById(int houseId) {  
+        return houseDao.selectByPrimaryKey(houseId);  
+    }
+    public List<House> getAll(){
+    	return houseDao.getAll();
+    }
+    public void save(House house){
+    	houseDao.insert(house);
+    }
+    public List<House> findByHouseDto(HouseDto houseDto){
+    	return houseDao.findByHouseDto(houseDto);
+    }
+	public List<House> getHouseByHoId(int HoId){
+		return houseDao.getHouseByHoId(HoId);
+	}
+}

@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/common/CheckUtil.java=UTF-8
+encoding//src/main/java/com/common/DateUtil.java=UTF-8
+encoding//src/main/java/com/common/TokenUtil.java=UTF-8
+encoding//src/main/java/com/controller/HouseController.java=UTF-8
+encoding//src/main/java/com/controller/OrderController.java=UTF-8
+encoding//src/main/java/com/controller/UserController.java=UTF-8
+encoding//src/main/java/com/entity/servlet/PictureCheckCode.java=UTF-8
+encoding//src/main/java/test/TestMyBatis.java=UTF-8
+encoding//src/main/resources/jdbc.properties=UTF-8
+encoding//src/main/resources/log4j.properties=UTF-8
+encoding//src/main/webapp/index.jsp=UTF-8
