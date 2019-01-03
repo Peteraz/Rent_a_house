@@ -59,10 +59,10 @@ public class HouseController {
 	    String basePath = request.getScheme()+"://"+request.getServerName()                            //返回当前链接使用的协议；比如，一般应用返回http;SSL返回https。getServerName()获取得域名。
 	    		+":"+request.getServerPort()+request.getContextPath()+"/";                             //getServerPort()应用服务器端口。getContextPath()web项目的根路径。
 		try {
-			HttpSession session = request.getSession(true);                                           //若存在会话则返回该会话，否则新建一个会话。                                  
+			HttpSession session = request.getSession(true);                                            //若存在会话则返回该会话，否则新建一个会话。                                  
 			Object object = session.getAttribute("user");
 			if(object==null){
-				response.sendRedirect(basePath+"index?login=1");                                      //重定向到login页面
+				response.sendRedirect(basePath+"index?login=1");                                       //重定向到login页面
 			}
 			else {
 				User user = (User)object;
